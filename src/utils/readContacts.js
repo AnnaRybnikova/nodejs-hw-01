@@ -9,6 +9,6 @@ export const readContacts = async () => {
         return JSON.parse(data || []);
     } catch (err) {
         console.error('File reading error:', err);
-        throw new Error('Failed to read contacts data');
+        throw new Error();
     }
 };
